@@ -25,11 +25,36 @@
       a {
         text-decoration: none;
       }
-      @media screen and (max-width: 599.95px) {
+      @media all and (min-width: 500px) {
+        .show-mobile {
+          display: none !important;
+        }
+        .border-hide {
+          display: none !important;
+        }
       }
-      @media screen and (max-width: 549.95px) {
+      @media all and (max-width: 500px) {
+        .show-desktop {
+          display: none !important;
+        }
       }
+
       @media screen and (max-width: 399.95px) {
+        .img-2 {
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
+        .img-3 {
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
+        .img-4 {
+          width: 100% !important;
+          max-width: 100% !important;
+          text-align: center !important;
+        }
       }
     </style>
   </head>
@@ -41,17 +66,21 @@
           <!--Start of Container-->
           <table
             class="container"
-            width="600px"
+            width="100%"
             align="center"
             cellspacing="0"
             cellpadding="0"
             border="0"
-            style="font-family: 'Times New Roman', Times, serif"
+            style="
+              font-family: 'Times New Roman', Times, serif;
+              max-width: 600px;
+            "
           >
             <tr>
               <td>
                 <!--Start of "Take a look inside" table-->
                 <table
+                  class="take-a-look"
                   align="left"
                   width="50%"
                   border="0"
@@ -61,13 +90,16 @@
                 >
                   <tr>
                     <td align="left" style="padding: 0; font-size: 11px">
-                      <p style="margin: 0">Take a look inside</p>
+                      <p style="margin: 0; font-size: 11px">
+                        Take a look inside
+                      </p>
                     </td>
                   </tr>
                 </table>
                 <!--End of "Take a look inside" table-->
                 <!--Start of "View in Browser" table-->
                 <table
+                  class="view-browser"
                   align="right"
                   width="50%"
                   border="0"
@@ -78,10 +110,10 @@
                   <tr>
                     <td align="right" style="padding: 0; font-size: 11px">
                       <a
-                        href="https://www.example.com"
+                        href="https://www.uncommongoods.com/"
                         target="_blank"
                         rel="noopener"
-                        style="color: #277fd2"
+                        style="color: #277fd2; font-size: 11px"
                         >View in Browser</a
                       >
                     </td>
@@ -113,6 +145,7 @@
             <tr>
               <td>
                 <table
+                  class="show-desktop"
                   width="100%"
                   border="0"
                   cellspacing="0"
@@ -522,6 +555,7 @@
             <tr>
               <td>
                 <table
+                  class="good-to-pass"
                   width="100%"
                   border="0"
                   cellspacing="0"
@@ -638,6 +672,7 @@
             <tr>
               <td>
                 <table
+                  class="img-2"
                   align="left"
                   width="32.33%"
                   cellspacing="0"
@@ -655,12 +690,13 @@
                     </td>
                   </tr>
                 </table>
-                <table align="left" width="1.5%">
+                <table class="img-spacing" align="left" width="1.5%">
                   <tr>
                     <td style="width: 2px">&nbsp;</td>
                   </tr>
                 </table>
                 <table
+                  class="img-3"
                   align="left"
                   width="32.33%"
                   cellspacing="0"
@@ -678,12 +714,13 @@
                     </td>
                   </tr>
                 </table>
-                <table align="left" width="1.5%">
+                <table class="img-spacing" align="left" width="1.5%">
                   <tr>
                     <td style="width: 2px">&nbsp;</td>
                   </tr>
                 </table>
                 <table
+                  class="img-4"
                   align="left"
                   width="32.33%"
                   cellspacing="0"
@@ -713,7 +750,7 @@
               <td>
                 <table width="100%" style="border-top: 1px solid #555555">
                   <tr>
-                    <td style="line-height: 8px">&nbsp;</td>
+                    <td style="line-height: 15px">&nbsp;</td>
                   </tr>
                 </table>
               </td>
@@ -723,6 +760,7 @@
             <tr>
               <td style="font-family: Georgia, Times, Times New Roman, serif">
                 <table
+                  class="show-mobile"
                   align="center"
                   width="100%"
                   border="0"
@@ -988,19 +1026,32 @@
             </tr>
             <!--End of show-mobile section-->
             <tr>
-              <td style="line-height: 20px">&nbsp;</td>
-            </tr>
-            <!--Border starting-->
-            <tr>
               <td>
-                <table width="100%" style="border-top: 1px solid #555555">
+                <table
+                  class="border-hide"
+                  width="100%"
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                >
                   <tr>
-                    <td style="line-height: 15px">&nbsp;</td>
+                    <td style="line-height: 20px">&nbsp;</td>
                   </tr>
+                  <!--Border starting-->
+                  <tr>
+                    <td>
+                      <table width="100%" style="border-top: 1px solid #555555">
+                        <tr>
+                          <td style="line-height: 15px">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--Border ending-->
                 </table>
               </td>
             </tr>
-            <!--Border ending-->
+
             <!--Start of company info & social media link-->
             <tr>
               <td>
@@ -1291,7 +1342,7 @@
             <!--End of company info & social media link-->
 
             <tr>
-              <td style="line-height: 20px">&nbsp;</td>
+              <td style="line-height: 15px">&nbsp;</td>
             </tr>
             <!--Border starting-->
             <tr>
@@ -1304,6 +1355,61 @@
               </td>
             </tr>
             <!--Border ending-->
+            <!--Start of footer Section-->
+            <tr>
+              <td style="padding: 20px">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+                      <p style="margin-top: 0; color: grey; font-size: 11px">
+                        Adjust your email subscriptions, frequency and settings:
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="color: grey; font-size: 11px">
+                        Update Email Preference
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="color: grey; font-size: 11px">
+                        Or click here to
+                        <a
+                          href="#"
+                          target="_blank"
+                          rel="noopener"
+                          style="color: grey; text-decoration: underline"
+                          >Unsubscribe</a
+                        >
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="margin-top: 0; color: grey; font-size: 11px">
+                        You are receiving this email because you asked us to
+                        send you email newsletters highlighting new features and
+                        products.
+                      </p>
+                      <p style="color: grey; font-size: 11px">
+                        To ensure delivery to your inbox, please add:
+                        info@lists.uncommongoods.com to your address book of
+                        approved senders. Please email us with comments at:
+                        feedback@uncommongoods.com.
+                      </p>
+                      <p style="color: grey; font-size: 11px">
+                        ©2014 UncommonGoodsTM L.L.C. 140 58th Street, Building B
+                        Suite 5AB, Brooklyn, New York, 11220
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!--End of footer Section-->
           </table>
 
           <!--End of Container-->
