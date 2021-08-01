@@ -25,35 +25,89 @@
       a {
         text-decoration: none;
       }
-      @media all and (min-width: 500px) {
+
+      @media screen and (min-width: 549px) {
         .show-mobile {
           display: none !important;
         }
         .border-hide {
           display: none !important;
         }
-      }
-      @media all and (max-width: 500px) {
-        .show-desktop {
+        .comp-info .mobile-info {
+          display: none !important;
+        }
+        .border-hide {
           display: none !important;
         }
       }
+      @media screen and (max-width: 550px) {
+        .take-a-look {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .take-a-look p {
+          font-size: 11px !important;
+          text-align: center !important;
+        }
+        .view-browser {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
 
-      @media screen and (max-width: 399.95px) {
+        .view-browser p {
+          text-align: center !important;
+          line-height: 2.75;
+        }
+        .view-browser a {
+          font-size: 11px !important;
+        }
+        .show-desktop {
+          display: none !important;
+        }
+        .take-a-look {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .browser-view {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .comp-info {
+          width: 100% !important;
+        }
+
+        .comp-info .info {
+          display: none !important;
+        }
+
+        .social-info {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-top: 10px !important;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
         .img-2 {
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
+          padding-bottom: 4px !important ;
         }
+
         .img-3 {
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
+          padding-bottom: 4px !important ;
         }
         .img-4 {
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
+        }
+        .img-spacing {
+          display: none !important;
         }
       }
     </style>
@@ -89,7 +143,7 @@
                   style="max-width: 300px"
                 >
                   <tr>
-                    <td align="left" style="padding: 0; font-size: 11px">
+                    <td align="left" style="font-size: 11px">
                       <p style="margin: 0; font-size: 11px">
                         Take a look inside
                       </p>
@@ -108,16 +162,18 @@
                   style="max-width: 300px"
                 >
                   <tr>
-                    <td align="right" style="padding: 0; font-size: 11px">
-                      <a
-                        href="https://www.uncommongoods.com/"
-                        target="_blank"
-                        rel="noopener"
-                        style="color: #277fd2; font-size: 11px"
-                        >View in Browser</a
-                      >
+                    <td align="right" style="font-size: 11px">
+                      <p style="margin: 0">
+                        <a
+                          class="view-link"
+                          href="https://www.uncommongoods.com/"
+                          target="_blank"
+                          rel="noopener"
+                          style="color: #277fd2; font-size: 11px"
+                          >View in Browser</a
+                        >
+                      </p>
                     </td>
-                    <td style="width: 15px">&nbsp;</td>
                   </tr>
                 </table>
                 <!--End of "View in Browser" table-->
@@ -129,12 +185,13 @@
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td align="center">
-                      <img
-                        src="img/img1.png"
-                        width="100%"
-                        alt="#"
-                        style="max-width: 175px"
-                      />
+                      <a href="#" alt="null" rel="noopener">
+                        <img
+                          src="https://i.ibb.co/rcFWK6r/img1.png"
+                          width="100%"
+                          alt="#"
+                          style="max-width: 175px"
+                      /></a>
                     </td>
                   </tr>
                 </table>
@@ -184,7 +241,7 @@
                               class="text-center"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -206,11 +263,18 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          padding-right: 5px;
+                          padding-left: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -250,7 +314,7 @@
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -272,11 +336,18 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="
+                          border-spacing: 0;
+                          padding-right: 5px;
+                          padding-left: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -307,7 +378,7 @@
                               class="text-center"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -329,11 +400,14 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="border-spacing: 0"
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -364,7 +438,7 @@
                               class="text-center"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 text-align: center;
                                 text-decoration: none;
@@ -385,11 +459,14 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="border-spacing: 0"
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -420,7 +497,7 @@
                               class="text-center"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 text-align: center;
                                 text-decoration: none;
@@ -441,11 +518,14 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="border-spacing: 0"
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -476,7 +556,7 @@
                               class="text-center"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 text-align: center;
                                 text-decoration: none;
@@ -497,11 +577,14 @@
                         width: 1%;
                       "
                     >
-                      <table width="100%" style="border-spacing: 0">
+                      <table
+                        class="menu-divider"
+                        width="100%"
+                        style="border-spacing: 0"
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -531,7 +614,7 @@
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 16px;
                                 text-align: center;
                                 text-decoration: none;
@@ -548,6 +631,22 @@
               </td>
             </tr>
             <!--End of Menu Section-->
+            <!--Dektop hide Border starting-->
+            <tr>
+              <td>
+                <table
+                  class="border-hide"
+                  width="100%"
+                  style="border-top: 1px solid #555555"
+                >
+                  <tr>
+                    <td style="line-height: 1px">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!--Desktop hide Border ending-->
+
             <tr>
               <td style="line-height: 10px">&nbsp;</td>
             </tr>
@@ -605,7 +704,7 @@
                         <tr>
                           <td>
                             <a
-                              href="https://www.example.com"
+                              href="#"
                               alt="null"
                               rel="noopener"
                               target="_blank"
@@ -681,12 +780,13 @@
                 >
                   <tr>
                     <td>
-                      <img
-                        src="img/img2.png"
-                        width="100%"
-                        style="max-width: 193px"
-                        alt=""
-                      />
+                      <a href="#" alt="null" rel="noopener">
+                        <img
+                          src="https://i.ibb.co/6XrJB6Q/img2.png"
+                          width="100%"
+                          style="max-width: 193px"
+                          alt=""
+                      /></a>
                     </td>
                   </tr>
                 </table>
@@ -705,12 +805,13 @@
                 >
                   <tr>
                     <td>
-                      <img
-                        src="img/img3.png"
-                        width="100%"
-                        style="max-width: 193px"
-                        alt=""
-                      />
+                      <a href="#" alt="null" rel="noopener">
+                        <img
+                          src="https://i.ibb.co/CJdHTsN/img3.png"
+                          width="100%"
+                          style="max-width: 193px"
+                          alt=""
+                      /></a>
                     </td>
                   </tr>
                 </table>
@@ -729,12 +830,13 @@
                 >
                   <tr>
                     <td>
-                      <img
-                        src="img/img4.png"
-                        width="100%"
-                        style="max-width: 193px"
-                        alt=""
-                      />
+                      <a href="#" alt="null" rel="noopener">
+                        <img
+                          src="https://i.ibb.co/3Yy5jcC/img4.png"
+                          width="100%"
+                          style="max-width: 193px"
+                          alt=""
+                      /></a>
                     </td>
                   </tr>
                 </table>
@@ -767,30 +869,8 @@
                   cellpadding="0"
                   cellspacing="0"
                   role="presentation"
-                  style="color: grey; max-width: 400px"
+                  style="color: grey; max-width: 450px"
                 >
-                  <tr>
-                    <td style="line-height: 18px">&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td
-                      style="
-                        padding-top: 10px;
-                        padding-right: 60px;
-                        padding-bottom: 10px;
-                        padding-left: 60px;
-                      "
-                    >
-                      <p
-                        style="
-                          border-top: solid 1px #d3d3d3;
-                          font-size: 1px;
-                          margin: 0px auto;
-                          width: 100%;
-                        "
-                      ></p>
-                    </td>
-                  </tr>
                   <!--start of home Section-->
                   <tr>
                     <td style="color: grey !important; line-height: 1.2">
@@ -817,9 +897,9 @@
                     <td
                       style="
                         padding-top: 10px;
-                        padding-right: 60px;
+                        padding-right: 10px;
                         padding-bottom: 10px;
-                        padding-left: 60px;
+                        padding-left: 10px;
                       "
                     >
                       <p
@@ -859,9 +939,9 @@
                     <td
                       style="
                         padding-top: 10px;
-                        padding-right: 60px;
+                        padding-right: 10px;
                         padding-bottom: 10px;
-                        padding-left: 60px;
+                        padding-left: 10px;
                       "
                     >
                       <p
@@ -901,9 +981,9 @@
                     <td
                       style="
                         padding-top: 10px;
-                        padding-right: 60px;
+                        padding-right: 10px;
                         padding-bottom: 10px;
-                        padding-left: 60px;
+                        padding-left: 10px;
                       "
                     >
                       <p
@@ -943,9 +1023,9 @@
                     <td
                       style="
                         padding-top: 10px;
-                        padding-right: 60px;
+                        padding-right: 10px;
                         padding-bottom: 10px;
-                        padding-left: 60px;
+                        padding-left: 10px;
                       "
                     >
                       <p
@@ -984,9 +1064,9 @@
                     <td
                       style="
                         padding-top: 10px;
-                        padding-right: 60px;
+                        padding-right: 10px;
                         padding-bottom: 10px;
-                        padding-left: 60px;
+                        padding-left: 10px;
                       "
                     >
                       <p
@@ -1055,17 +1135,22 @@
             <!--Start of company info & social media link-->
             <tr>
               <td>
+                <!--Start of company info table -->
                 <table
+                  class="comp-info"
                   align="left"
                   width="70%"
                   border="0"
                   cellspacing="0"
                   cellpadding="0"
+                  style="max-width: 420px"
                 >
+                  <!--Start of show-desktop info Section-->
                   <tr>
                     <td>
                       <table
-                        width="100%"
+                        class="info"
+                        align="left"
                         style="
                           border-spacing: 0;
                           text-align: center;
@@ -1073,12 +1158,20 @@
                         "
                       >
                         <tr>
-                          <td style="margin: 0; font-size: 11px">
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
                             <a
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 11px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -1090,21 +1183,21 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td
-                      style="
-                        padding-bottom: 5px;
-                        padding-left: 2px;
-                        padding-right: 2px;
-                        padding-top: 5px;
-                        width: 1%;
-                      "
-                    >
-                      <table width="100%" style="border-spacing: 0">
+
+                      <table
+                        class="menu-divider info"
+                        align="left"
+                        style="
+                          border-spacing: 0;
+                          padding-left: 5px;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          padding-right: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -1117,10 +1210,10 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td>
+
                       <table
-                        width="100%"
+                        class="info"
+                        align="left"
                         style="
                           border-spacing: 0;
                           text-align: center;
@@ -1128,12 +1221,20 @@
                         "
                       >
                         <tr>
-                          <td style="margin: 0; font-size: 11px">
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
                             <a
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 11px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -1145,21 +1246,21 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td
-                      style="
-                        padding-bottom: 5px;
-                        padding-left: 2px;
-                        padding-right: 2px;
-                        padding-top: 5px;
-                        width: 1%;
-                      "
-                    >
-                      <table width="100%" style="border-spacing: 0">
+
+                      <table
+                        class="menu-divider info"
+                        align="left"
+                        style="
+                          border-spacing: 0;
+                          padding-left: 5px;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          padding-right: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -1172,10 +1273,10 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td>
+
                       <table
-                        width="100%"
+                        class="info"
+                        align="left"
                         style="
                           border-spacing: 0;
                           text-align: center;
@@ -1183,12 +1284,20 @@
                         "
                       >
                         <tr>
-                          <td style="margin: 0; font-size: 11px">
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
                             <a
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 11px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -1200,21 +1309,21 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td
-                      style="
-                        padding-bottom: 5px;
-                        padding-left: 2px;
-                        padding-right: 2px;
-                        padding-top: 5px;
-                        width: 1%;
-                      "
-                    >
-                      <table width="100%" style="border-spacing: 0">
+
+                      <table
+                        class="menu-divider info"
+                        align="left"
+                        style="
+                          border-spacing: 0;
+                          padding-left: 5px;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          padding-right: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -1227,10 +1336,10 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td>
+
                       <table
-                        width="100%"
+                        class="info"
+                        align="left"
                         style="
                           border-spacing: 0;
                           text-align: center;
@@ -1238,11 +1347,19 @@
                         "
                       >
                         <tr>
-                          <td style="margin: 0; font-size: 11px">
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
                             <a
                               href="#"
                               style="
-                                color: gray;
+                                color: #808080;
                                 font-size: 11px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -1254,21 +1371,21 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td
-                      style="
-                        padding-bottom: 5px;
-                        padding-left: 2px;
-                        padding-right: 2px;
-                        padding-top: 5px;
-                        width: 1%;
-                      "
-                    >
-                      <table width="100%" style="border-spacing: 0">
+
+                      <table
+                        class="menu-divider info"
+                        align="left"
+                        style="
+                          border-spacing: 0;
+                          padding-left: 5px;
+                          padding-top: 5px;
+                          padding-bottom: 5px;
+                          padding-right: 5px;
+                        "
+                      >
                         <tr>
                           <td>
                             <span
-                              class="menu-divider"
                               style="
                                 background: #555555;
                                 background-color: #555555;
@@ -1281,10 +1398,10 @@
                           </td>
                         </tr>
                       </table>
-                    </td>
-                    <td>
+
                       <table
-                        width="100%"
+                        class="info"
+                        align="left"
                         style="
                           border-spacing: 0;
                           text-align: center;
@@ -1293,12 +1410,20 @@
                         "
                       >
                         <tr>
-                          <td style="margin: 0; font-size: 11px">
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
                             <a
                               href="#"
                               style="
                                 margin: 0;
-                                color: gray;
+                                color: #808080;
                                 font-size: 11px;
                                 line-height: 1.3;
                                 text-align: center;
@@ -1312,8 +1437,205 @@
                       </table>
                     </td>
                   </tr>
+                  <!--End of show-desktop info Section-->
+
+                  <!--Start of show-mobile2 info Section-->
+                  <tr>
+                    <td>
+                      <table
+                        class="mobile-info"
+                        width="100%"
+                        align="center"
+                        style="
+                          border-spacing: 0;
+                          text-align: center;
+                          vertical-align: top;
+                          max-width: 300px;
+                        "
+                      >
+                        <tr>
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                margin: 0;
+                                color: #808080;
+                                font-size: 11px;
+                                line-height: 1.3;
+                                text-align: center;
+                                text-decoration: none;
+                              "
+                            >
+                              Contact us</a
+                            >
+                          </td>
+
+                          <td>
+                            <span
+                              style="
+                                background: #555555;
+                                background-color: #555555;
+                                display: block;
+                                height: 20px;
+                                width: 1px;
+                              "
+                            >
+                            </span>
+                          </td>
+
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                margin: 0;
+                                color: #808080;
+                                font-size: 11px;
+                                line-height: 1.3;
+                                text-align: center;
+                                text-decoration: none;
+                              "
+                            >
+                              about us
+                            </a>
+                          </td>
+
+                          <td>
+                            <span
+                              style="
+                                background: #555555;
+                                background-color: #555555;
+                                display: block;
+                                height: 20px;
+                                width: 1px;
+                              "
+                            >
+                            </span>
+                          </td>
+
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              text-align: center;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                margin: 0;
+                                color: #808080;
+                                font-size: 11px;
+                                line-height: 1.3;
+                                text-align: left;
+                                text-decoration: none;
+                              "
+                            >
+                              request & catalog
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--Start of Second row of show-mobile2-->
+                  <tr>
+                    <td>
+                      <table
+                        class="mobile-info"
+                        align="center"
+                        width="100%"
+                        style="max-width: 330px; border-spacing: 0"
+                      >
+                        <tr>
+                          <td
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                              text-align: right;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                color: #808080;
+                                font-size: 11px;
+                                line-height: 1.3;
+                                text-align: center;
+                                text-decoration: none;
+                              "
+                            >
+                              corporate gifts & bulk orders</a
+                            >
+                          </td>
+
+                          <td width="7%" style="padding-left: 10px">
+                            <span
+                              style="
+                                background: #555555;
+                                background-color: #555555;
+                                display: block;
+                                height: 20px;
+                                width: 1px;
+                              "
+                            >
+                            </span>
+                          </td>
+
+                          <td
+                            width="30%"
+                            style="
+                              margin: 0;
+                              font-size: 11px;
+                              line-height: 3;
+                              padding-right: 5px;
+                              padding-left: 5px;
+                            "
+                          >
+                            <a
+                              href="#"
+                              style="
+                                margin: 0;
+                                color: #808080;
+                                font-size: 11px;
+                                line-height: 1.3;
+                                text-align: center;
+                                text-decoration: none;
+                              "
+                            >
+                              blog</a
+                            >
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!--End of Second row of show-mobile2-->
+
+                  <!--End of show-mobile2 info Section-->
                 </table>
+                <!--End of company info table -->
+                <!--Start of Social media info table -->
                 <table
+                  class="social-info"
                   align="left"
                   width="30%"
                   border="0"
@@ -1323,20 +1645,53 @@
                   <tr>
                     <td align="center">
                       <a href="#" target="_blank" rel="noopener"
-                        ><img width="30px" src="img/fb.png" alt="null"
+                        ><img
+                          width="30px"
+                          src="https://i.ibb.co/YQ3MfCj/fb.png"
+                          alt="null"
+                          style="
+                            border-width: 0;
+                            padding-right: 1px;
+                            max-width: 30px;
+                          "
                       /></a>
                       <a href="#" target="_blank" rel="noopener"
-                        ><img width="30px" src="img/twitt.png" alt="null"
+                        ><img
+                          width="30px"
+                          src="https://i.ibb.co/M5J3rFz/twitt.png"
+                          alt="null"
+                          style="
+                            border-width: 0;
+                            padding-right: 1px;
+                            max-width: 30px;
+                          "
                       /></a>
                       <a href="#" target="_blank" rel="noopener"
-                        ><img width="30px" src="img/pint.png" alt="null"
+                        ><img
+                          width="33px"
+                          src="https://i.ibb.co/bszrMRV/pint.png"
+                          alt="null"
+                          style="
+                            border-width: 0;
+                            padding-right: 1px;
+                            max-width: 33px;
+                          "
                       /></a>
                       <a href="#" target="_blank" rel="noopener"
-                        ><img width="30px" src="img/ig.png" alt="null"
+                        ><img
+                          width="32px"
+                          src="https://i.ibb.co/Q6wyZXL/ig.png"
+                          alt="null"
+                          style="
+                            border-width: 0;
+                            padding-right: 1px;
+                            max-width: 32px;
+                          "
                       /></a>
                     </td>
                   </tr>
                 </table>
+                <!--End of Social media info table -->
               </td>
             </tr>
             <!--End of company info & social media link-->
@@ -1357,7 +1712,14 @@
             <!--Border ending-->
             <!--Start of footer Section-->
             <tr>
-              <td style="padding: 20px">
+              <td
+                style="
+                  padding-top: 10px;
+                  padding-bottom: 20px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                "
+              >
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td>
