@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Email Template 1</title>
+    <title>Email Intergrations Challenge (Istiak Ahmed)</title>
     <style type="text/css">
       @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
       table {
@@ -36,9 +36,7 @@
         .comp-info .mobile-info {
           display: none !important;
         }
-        .border-hide {
-          display: none !important;
-        }
+
         .img-spac-mob {
           display: none !important;
         }
@@ -95,14 +93,12 @@
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
-          line-height: 4px !important ;
         }
 
         .img-3 {
           width: 100% !important;
           max-width: 100% !important;
           text-align: center !important;
-          line-height: 4px !important ;
         }
         .img-4 {
           width: 100% !important;
@@ -110,7 +106,7 @@
           text-align: center !important;
         }
         .img-spacing {
-          display: none !important;
+          height: 4px !important;
         }
       }
     </style>
@@ -185,6 +181,11 @@
             <!--Start of Logo image section-->
             <tr>
               <td>
+                <!--[if (gte mso 9)|(IE)]>
+                <table width="100%" align="center" style="border-spacing:0; max-width: 175px;">
+                <tr>
+                <td style=" max-width: 175px; width: 100%;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;text-align: center;">
+              <![endif]-->
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td align="center">
@@ -198,6 +199,11 @@
                     </td>
                   </tr>
                 </table>
+                <!--[if (gte mso 9)|(IE)]>
+										</td>
+										</tr>
+										</table>
+									<![endif]-->
               </td>
             </tr>
             <!--End of Logo image section-->
@@ -635,6 +641,7 @@
             </tr>
             <!--End of Menu Section-->
             <!--Dektop hide Border starting-->
+
             <tr>
               <td>
                 <table
@@ -642,12 +649,25 @@
                   width="100%"
                   style="border-top: 1px solid #555555"
                 >
-                  <tr>
-                    <td style="line-height: 1px">&nbsp;</td>
-                  </tr>
+                  <div
+                    class="border-hide"
+                    width="100%"
+                    style="
+                      display: none;
+                      font-size: 0;
+                      max-height: 0;
+                      line-height: 0;
+                      padding: 0;
+                    "
+                  >
+                    <tr>
+                      <td style="line-height: 1px">&nbsp;</td>
+                    </tr>
+                  </div>
                 </table>
               </td>
             </tr>
+
             <!--Desktop hide Border ending-->
 
             <tr>
@@ -779,79 +799,78 @@
                 <table
                   class="img-2"
                   align="left"
-                  width="32.33%"
+                  width="32.35%"
                   cellspacing="0"
                   cellpadding="0"
                   style="border-spacing: 0"
                 >
                   <tr>
-                    <td>
+                    <td align="center">
                       <a href="#" alt="null" rel="noopener">
                         <img
                           src="https://i.ibb.co/6XrJB6Q/img2.png"
                           width="100%"
-                          style="max-width: 193px"
+                          style="max-width: 193px; text-align: center"
                           alt=""
                       /></a>
                     </td>
                   </tr>
                 </table>
-                <table class="img-spacing" align="left" width="1.2%">
+                <table
+                  class="img-spacing"
+                  align="left"
+                  style="width: 7px; height: 1px"
+                >
                   <tr>
-                    <td style="width: 2px">&nbsp;</td>
-                  </tr>
-                </table>
-                <table class="img-spac-mob" align="left" width="1.2%">
-                  <tr>
-                    <td style="line-height: 8px">&nbsp;</td>
+                    <td style="width: 7px"></td>
                   </tr>
                 </table>
 
                 <table
                   class="img-3"
                   align="left"
-                  width="32.33%"
+                  width="32.35%"
                   cellspacing="0"
                   cellpadding="0"
                   style="border-spacing: 0"
                 >
                   <tr>
-                    <td>
+                    <td align="center">
                       <a href="#" alt="null" rel="noopener">
                         <img
-                          src="https://i.ibb.co/CJdHTsN/img3.png"
+                          src="https://i.ibb.co/7b7qSbL/img3.png"
                           width="100%"
-                          style="max-width: 193px"
+                          style="max-width: 193px; text-align: center"
                           alt=""
                       /></a>
                     </td>
                   </tr>
                 </table>
-                <table class="img-spacing" align="left" width="1.5%">
+                <table
+                  class="img-spacing"
+                  align="left"
+                  style="width: 7px; height: 1px"
+                >
                   <tr>
-                    <td style="width: 2px">&nbsp;</td>
+                    <td style="width: 7px"></td>
                   </tr>
                 </table>
-                <table class="img-spac-mob" align="left" width="1.5%">
-                  <tr>
-                    <td style="line-height: 8px">&nbsp;</td>
-                  </tr>
-                </table>
+
                 <table
                   class="img-4"
                   align="left"
-                  width="32.33%"
+                  width="32.35%"
                   cellspacing="0"
                   cellpadding="0"
                   style="border-spacing: 0"
                 >
                   <tr>
-                    <td>
+                    <td align="center">
                       <a href="#" alt="null" rel="noopener">
                         <img
                           src="https://i.ibb.co/3Yy5jcC/img4.png"
                           width="100%"
-                          style="max-width: 193px"
+                          style="max-width: 193px; text-align: center"
                           alt=""
                       /></a>
                     </td>
@@ -862,7 +881,7 @@
             <!--End of image section-->
 
             <tr>
-              <td style="line-height: 6px">&nbsp;</td>
+              <td style="line-height: 5px">&nbsp;</td>
             </tr>
             <!--Border starting-->
             <tr>
